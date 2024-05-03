@@ -14,7 +14,7 @@ function Article(lang) {
   const { id } = useParams();
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/articles/${id}`)
+      .get(`https://bn-bwh7.onrender.com/articles/${id}`)
       .then((res) => {
         console.log(res);
         setTitle(res.data.title);
